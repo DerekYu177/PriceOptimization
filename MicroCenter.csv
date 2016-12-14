@@ -1,0 +1,223 @@
++-------------+----------+-----------+-----------+--------------------------------------------------------------------------------------------------------------------------------------------+
+|  Component  |     $USD |      $CAD |    Site   | Name                                                                                                                                       |
++-------------+----------+-----------+-----------+--------------------------------------------------------------------------------------------------------------------------------------------+
+|     Case    |    $71.0 |   * $99.0 |    NCIX   | Silverstone Raven Z RVZ02B mITX Case 1XODD 2X2.5IN 2XUSB3.0 1XPCI-E x16 Support SFX PSU - Black                                            |
+|     Case    |    $71.0 |   * $99.0 |   Newegg  | SilverStone RAVEN RVZ02B Black Computer Case                                                                                               |
+| Motherboard |  * $89.0 |    $124.0 |   MicroC  | Gigabyte GA-H97M-D3H LGA1150 mATX Intel Motherboard                                                                                        |
+| Motherboard | * $109.0 |    $152.0 |   MicroC  | Gigabyte GA-H97N-WIFI LGA 1150 mini-ITX Intel Motherboard                                                                                  |
+| Motherboard |   $107.0 |  * $149.0 |    NCIX   | GIGABYTE H97N-WIFI mITX LGA1150 H97 DDR3 PCI-E16 PCI-E8 SATA3 USB3 HDMI GBLAN Motherboard                                                  |
+| Motherboard |    $86.0 |  * $119.0 |    NCIX   | GIGABYTE H97M-D3H mATX LGA1150 H97 DDR3 PCI-E16 PCI-E1 Xfire SATA3 USB3 HDMI Motherboard                                                   |
+| Motherboard |    $89.0 |  * $124.0 |    NCIX   | GIGABYTE H97-HD3 LGA 1150 Intel H97 HDMI SATA 6GB/S USB 3.0 ATX Intel Motherboard                                                          |
+| Motherboard |    $90.0 |  * $126.0 |    NCIX   | GIGABYTE H97M-HD3 mATX LGA1150 H97 DDR3 PCI-E16 2PCI-E1 SATA3 USB3 HDMI Motherboard                                                        |
+| Motherboard |    $81.0 |  * $114.0 |   Newegg  | GIGABYTE GA-H97M-D3H Micro ATX Intel Motherboard                                                                                           |
+| Motherboard |    $85.0 |  * $119.0 |   Newegg  | GIGABYTE GA-H97-HD3 ATX Intel Motherboard                                                                                                  |
+| Motherboard |   $146.0 |  * $204.0 |   Newegg  | GIGABYTE GA-H97N-WIFI LGA 1150 Intel H97 HDMI SATA 6Gb/s USB 3.0 Mini ITX Intel Motherboard                                                |
+| Motherboard |   $648.0 |  * $903.0 |   Newegg  | GIGABYTE GA-H97M-HD3 Micro ATX Intel Motherboard                                                                                           |
+| Motherboard |    $71.0 |   * $99.0 |   Newegg  | GIGABYTE GA-Z97M-D3H Micro ATX Intel Motherboard                                                                                           |
+| Motherboard |    $89.0 |  * $123.0 | amazon.ca | Gigabyte H97 Extreme Multi Graphics Support UEFI DualBIOS Micro ATX DDR3 1600 LGA 1150 Motherboard GA-H97M-D3H                             |
+| Motherboard |    $88.0 |  * $123.0 | amazon.ca | Gigabyte LGA 1150 Intel H97 HDMI SATA 6Gb/s USB 3.0 Micro ATX DDR3 1600 LGA 1150 Motherboards GA-H97M-HD3                                  |
+| Motherboard |   $121.0 |  * $169.0 | amazon.ca | Gigabyte LGA 1150 H97 Wi-Fi Bluetooth HDMI SATA 6Gb/s USB 3.0 Mini ITX Intel Motherboard GA-H97N-WIFI                                      |
+| Motherboard |    $90.0 |  * $126.0 | amazon.ca | Gigabyte H97 SATA Express M.2 SSD UEFI DualBIOS DDR3 1600 LGA 1150 Motherboard GA-H97-D3H                                                  |
+| Motherboard |   $143.0 |  * $199.0 | amazon.ca | MSI ATX DDR3 2400 LGA 1150 Motherboards H97 PC MATE                                                                                        |
+| Motherboard |   $114.0 |  * $159.0 | amazon.ca | Gigabyte GA-Z97X-GAMING 3 LGA 1150 Z97 Gaming Audio and Networking ATX Motherboard                                                         |
+| Motherboard |   $146.0 |  * $203.0 | amazon.ca | Gigabyte GA-Z97-HD3 LGA 1150 Z97 HDMI 2-Way CrossFire ATX Motherboard                                                                      |
+| Motherboard |   $185.0 |  * $258.0 | amazon.ca | Gigabyte GA-Z97X-UD5H LGA 1150 Z97 with Killer E2200 and Intel Gaming Networking SATA Express M.2 SSD ATX Motherboard                      |
+| Motherboard |   $128.0 |  * $178.0 | amazon.ca | Gigabyte Black Edition LGA 1150 Intel Z97 HDMI SATA 6Gb/s USB 3.0 ATX Intel Motherboards GA-Z97X-UD3H-BK                                   |
+| Motherboard |   $147.0 |  * $205.0 | amazon.ca | Gigabyte LGA 1150 Z97 SATA Express M.2 for SSD ATX DDR3 1600 Motherboard GA-Z97-D3H                                                        |
+| Motherboard |    $81.0 |  * $113.0 | amazon.ca | GIGABYTE GA-H97N-WIFI -LGA1150 Intel H97 Chipset DDR3/ SATA3&USB3.0/ WiFi/ A&2GbE/ Mini-ITX Motherboard                                    |
+|   Graphics  | * $329.0 |    $458.0 |   MicroC  | ASUS GeForce GTX 970 Overclocked 4GB GDDR5 Video Card                                                                                      |
+|   Graphics  | * $669.0 |    $931.0 |   MicroC  | EVGA GeForce GTX 980 Ti SC+ GAMING 6GB Video Card w/ ACX 2.0+ Silent Cooling & Back Plate                                                  |
+|   Graphics  | * $237.0 |    $330.0 |   MicroC  | ASUS GeForce GTX 960 Overclocked 4GB GDDR5 PCI-e Video Card                                                                                |
+|   Graphics  | * $369.0 |    $514.0 |   MicroC  | EVGA GeForce GTX 970 FTW GAMING 4GB GDDR5 Video Card w/ ACX 2.0 Silent Cooling                                                             |
+|   Graphics  | * $349.0 |    $486.0 |   MicroC  | MSI GeForce GTX 970 Gaming 4GB GDDR5 Video Card                                                                                            |
+|   Graphics  | * $239.0 |    $333.0 |   MicroC  | EVGA GeForce GTX 960 4GB GDDR5 SC Gaming Video Card w/ ACX 2.0+ Silent Cooling                                                             |
+|   Graphics  | * $164.0 |    $228.0 |   MicroC  | EVGA GeForce GTX 950 GAMING 2GB GDDR5 Short-Board Video Card                                                                               |
+|   Graphics  | * $369.0 |    $514.0 |   MicroC  | Gigabyte GeForce GTX 970 G1 Gaming 4GB GDDR5 Video Card                                                                                    |
+|   Graphics  | * $659.0 |    $917.0 |   MicroC  | ASUS STRIX GeForce GTX 980 Ti Overclocked GAMING 6GB GDDR5 PCIe Video Card                                                                 |
+|   Graphics  | * $229.0 |    $319.0 |   MicroC  | Gigabyte GeForce GTX 960 Overclocked 4GB GDDR5 Video Card                                                                                  |
+|   Graphics  | * $219.0 |    $305.0 |   MicroC  | EVGA GeForce GTX 960 SuperSC GAMING 2GB GDDR5 Video Card w/ ACX 2.0+ Silent Cooling                                                        |
+|   Graphics  | * $669.0 |    $931.0 |   MicroC  | MSI GeForce GTX 980 Ti GAMING 6GB GDDR5 PCI-e Video Card                                                                                   |
+|   Graphics  | * $349.0 |    $486.0 |   MicroC  | EVGA GeForce GTX 970 SSC GAMING Video Card w/ ACX 2.0 Silent Cooling                                                                       |
+|   Graphics  | * $234.0 |    $326.0 |   MicroC  | MSI GeForce GTX 960 Gaming 4GB GDDR5 Video Card w/ Zero Frozr Cooling System                                                               |
+|   Graphics  | * $174.0 |    $242.0 |   MicroC  | EVGA GeForce GTX 950 SC+ GAMING 2GB GDDR5 Video Card w/ ACX 2.0+ Silent Cooling                                                            |
+|   Graphics  | * $204.0 |    $284.0 |   MicroC  | EVGA GeForce GTX 960 Superclocked Gaming 2GB GDDR5 (Single-Fan) Video Card                                                                 |
+|   Graphics  | * $754.0 |   $1050.0 |   MicroC  | EVGA GeForce GTX 980 Ti Hybrid GAMING 6GB Video Card w/ All-In-One Cooling                                                                 |
+|   Graphics  | * $679.0 |    $945.0 |   MicroC  | ASUS GeForce GTX 960 Overclocked 2GB GDDR5 Video Card                                                                                      |
+|   Graphics  | * $709.0 |    $987.0 |   MicroC  | EVGA GeForce GTX 980 Ti Superclocked GAMING 6GB Video Card w/ ACX 2.0+ Silent Cooling                                                      |
+|   Graphics  |  * $59.0 |     $82.0 |   MicroC  | EVGA GeForce GTX 980 Ti Classified GAMING 6GB Video Card w/ ACX 2.0+ Silent Cooling                                                        |
+|   Graphics  | * $529.0 |    $736.0 |   MicroC  | MSI GeForce GTX 970 Overclocked 4GB Video Card - Armor 2X Thermal Design                                                                   |
+|   Graphics  | * $224.0 |    $312.0 |   MicroC  | Zotac GeForce GTX 560 Ti (Factory-Recertified) 1GB GDDR5 Video Card                                                                        |
+|   Graphics  |    $86.0 |  * $119.0 | amazon.ca | ViewMax NVIDIA GeForce GT 740 4GB GDDR3 128-Bit PCI Express (PCIe) DVI Video Card HDMI & HDCP Support *** CYBERWOLF...                     |
+|   Graphics  |   $119.0 |  * $165.0 | amazon.ca | ViewMax NVIDIA GeForce GTX 750 1GB GDDR3 PCI Express (PCIe) DVI Video Card HDMI & HDCP Support *** EXTERMINATOR...                         |
+|   Graphics  |    $25.0 |   * $35.0 | amazon.ca | HP E8A00UA#ABL Envy Leap Motion 17.3-Inch Notebook (Intel Core i7 4702MQ, 8GB, 1TB, NVIDIA GeForce GT 750M, Windows...                     |
+|   Graphics  |    $15.0 |   * $20.0 | amazon.ca | MSI CX61 2PC-492CA Class Series, 15.6" HD Laptop (Core i5-4200M, DDR III 8GB, nVidia Geforce GT820M, 2GB DDR3,...                          |
+|   Graphics  |    $12.0 |   * $16.0 | amazon.ca | ViewMax NVIDIA GeForce GT 720 2GB GDDR3 PCI Express (PCIe) DVI Video Card HDMI & HDCP Support * AIR STRIKE F-16...                         |
+|   Graphics  |    $68.0 |   * $94.0 | amazon.ca | Asus NVIDIA GeForce GT 750 Ti OC 2GB GDDR5 DisplayPort/DVI/HDMI PCI-Express Video Card                                                     |
+|   Storage   | * $179.0 |    $249.0 |   MicroC  | Samsung 850 EVO-Series 500GB SATA III 6Gb/s 2.5" Internal SSD Single Unit Version MZ-75E500B/AM                                            |
+|   Storage   |  * $89.0 |    $124.0 |   MicroC  | Samsung 850 EVO Series 250GB SATA III 6Gb/s 2.5" Internal SSD Single Unit Version MZ-75E250B/AM                                            |
+|   Storage   |  * $94.0 |    $131.0 |   MicroC  | Samsung 850 EVO Series 120GB SATA III 6Gb/s 2.5" Internal SSD Single Unit Version MZ-75E120B/AM                                            |
+|   Storage   |   $150.0 |  * $209.0 |    NCIX   | Samsung 850 EVO Series MZ-75E500B/AM 500GB 2.5in SATA III Internal SSD With AES 256 Encryption                                             |
+|   Storage   |    $71.0 |   * $99.0 |    NCIX   | Kingston SSDNow V300 240GB SV300S37A/240G 2.5IN SATA3 LSI Sandforce Solid State Disk Flash Drive SSD                                       |
+|   Storage   |    $43.0 |   * $60.0 |    NCIX   | Kingston SSDNow V300 120GB SV300S37A/120G 2.5IN SATA3 LSI Sandforce SSD                                                                    |
+|   Storage   |   $183.0 |  * $254.0 |    NCIX   | Corsair Graphite Series 780T Full Tower Gaming White Case ATX Toolfree SSD Cages Modular Drive Cage                                        |
+|   Storage   |   $140.0 |  * $194.0 |    NCIX   | Kingston SSDNow V300 480GB 2.5in SATA3 7MM LSI SandForce Solid State Disk Flash Drive SSD                                                  |
+|   Storage   |    $71.0 |   * $99.0 |    NCIX   | SanDisk SSD Z400S SD8SBAT-256G-1122 256GB 2.5INCH 7MM Brown Box                                                                            |
+|   Storage   |   $267.0 |  * $371.0 |    NCIX   | Samsung 950 Pro MZ-V5P256BW 256GB M.2 2280 NVMe PCIe 3.0X4 SSD                                                                             |
+|   Storage   |    $79.0 |  * $109.0 |    NCIX   | ADATA SX900 2.5" 256GB SSD SATA 3 Sandforce 2281 550MB/SEC Write and 530MB/SEC Read                                                        |
+|   Storage   |    $79.0 |  * $109.0 |    NCIX   | Samsung 850 EVO Series MZ-75E250B/AM 250GB 2.5in SATA III Internal SSD                                                                     |
+|   Storage   |   $236.0 |  * $328.0 |    NCIX   | Intel 730 Series 240GB SSD SSDSC2BP240G4R5 2.5in SATA 6GB/S 20NM MLC Retail Package                                                        |
+|   Storage   |   $251.0 |  * $349.0 |    NCIX   | SanDisk SDSSDHII-960G-G25 Ultra II 960GB SATA 3 SSD Up to 550/500MB/S(R/W)                                                                 |
+|   Storage   |   $147.0 |  * $204.0 |    NCIX   | SanDisk SDSSDHII-480G-G25 Ultra II 480GB SATA 3 SSD Up to 550/500MB/S(R/W)                                                                 |
+|   Storage   |    $64.0 |   * $89.0 |    NCIX   | Samsung 850 EVO Series MZ-75E120B/AM 120GB 2.5in SATA III Internal SSD                                                                     |
+|   Storage   |    $46.0 |   * $64.0 |    NCIX   | SanDisk Z400S SSD SD8SBAT-128G-1122 128GB 2.5INCH 7MM Brown Box                                                                            |
+|   Storage   |   $114.0 |  * $159.0 |    NCIX   | SanDisk Extreme Pro 2.5IN SSD 240GB SSD 550MB/R 520MB/W SATA 6G/S                                                                          |
+|   Storage   |   $129.0 |  * $179.0 |    NCIX   | Intel 535 Series SSD SSDSC2BW240H6R5 240GB 2.5INCH SATA 6GB S MLC 16NM 7MM Retail Pack                                                     |
+|   Storage   |    $78.0 |  * $109.0 | amazon.ca | Samsung 850 EVO 250GB 2.5-Inch SATA III Internal SSD (MZ-75E250B/AM)                                                                       |
+|   Storage   |   $142.0 |  * $198.0 | amazon.ca | Samsung 850 EVO 500GB 2.5-Inch SATA III Internal SSD (MZ-75E500B/AM)                                                                       |
+|   Storage   |    $60.0 |   * $84.0 | amazon.ca | Sandisk Canada SDSSDA-240G-G25 SSD Plus 240GB                                                                                              |
+|   Storage   |    $63.0 |   * $87.0 | amazon.ca | Samsung 850 EVO 120GB 2.5-Inch SATA III Internal SSD (MZ-75E120B/AM)                                                                       |
+|   Storage   |    $40.0 |   * $55.0 | amazon.ca | Sandisk Canada SDSSDA-120G-G25 SSD Plus 120GB                                                                                              |
+|   Storage   |   $337.0 |  * $469.0 | amazon.ca | Samsung 850 EVO 1TB 2.5-Inch SATA III Internal SSD (MZ-75E1T0B/AM)                                                                         |
+|    Memory   | * $129.0 |    $180.0 |   MicroC  | Crucial Server Memory 16GB DDR3-1600 (PC3-12800) CL11 ECC Server Module Kit (Two 8GB Memory Modules)                                       |
+|    Memory   |  * $79.0 |    $110.0 |   MicroC  | Crucial 16GB DDR3-1600 (PC3-12800) CL9 Laptop Memory Kit (Two 8GB Memory Modules)                                                          |
+|    Memory   |  * $99.0 |    $138.0 |   MicroC  | Crucial 16GB 2 x 8GB DDR4-2133 (PC4-17000) C15 Dual Channel Desktop Memory Module Kit                                                      |
+|    Memory   | * $109.0 |    $152.0 |   MicroC  | Crucial Ballistix Sport 16GB DDR3-1600 (PC3-12800) CL9 Dual Channel Laptop Memory Kit (Two 8GB Memory Modules)                             |
+|    Memory   |  * $91.0 |    $127.0 |   MicroC  | Crucial CT2C8G3S186DM 16GB 2 x 8GB DDR3L-1866 PC3-14900 CL9 SO-DIMM Mac Memory Kit                                                         |
+|    Memory   | * $299.0 |    $416.0 |   MicroC  | Crucial 32GB DDR3-1866 (PC3-14900) CL13 Unbuffered Desktop Memory Kit (Two 16GB Memory Modules) - for Mac Pro Systems                      |
+|    Memory   | * $109.0 |    $152.0 |   MicroC  | Crucial Ballistix Sport 16GB DDR3-1866 (PC3-14900) CL10 Dual Channel Laptop Memory Kit (Two 8GB Memory Modules)                            |
+|    Memory   |  * $89.0 |    $124.0 |   MicroC  | PNY 16GB (2x8GB) DDR3 1600 CAS 11 Low Voltage (1.35V) Laptop Memory Kit                                                                    |
+|    Memory   |  * $94.0 |    $131.0 |   MicroC  | Centon Memory Power 16GB DDR3-1333 (PC3-10600) CL9 Dual Channel Laptop Memory Kit (Two 8GB Memory Modules)                                 |
+|    Memory   |  * $89.0 |    $124.0 |   MicroC  | Crucial 16GB 4 x 4GB DDR4-2133 (PC4-17000) C15 Quad Channel Desktop Memory Module Kit                                                      |
+|    Memory   | * $599.0 |    $834.0 |   MicroC  | Crucial 32GB 32GB DDR4-2133 (PC4-17000) CL15 Dual Channel ECC Server Memory                                                                |
+|    Memory   | * $149.0 |    $207.0 |   MicroC  | Crucial 16GB DDR3-1866 (PC3-4900) CL13 Buffered Desktop Memory Module for Mac                                                              |
+|    Memory   | * $139.0 |    $194.0 |   MicroC  | Crucial 16GB DDR3-1866 (PC3-14900) CL13 Unbuffered Desktop Memory Kit (Two 8GB Memory Modules) - for Mac Pro Systems                       |
+|    Memory   |    $79.0 |  * $109.0 |    NCIX   | Corsair Vengeance Pro Gold 16GB 2X8GB DDR3-2400 CL11 1.65V Non-ECC Intel XMP Desktop Memory                                                |
+|    Memory   |   $107.0 |  * $149.0 |    NCIX   | Kingston HyperX Fury Black 16GB 2X8GB 2133MHZ DDR4 Non-ECC CL14 DIMM Dual Channel Memory                                                   |
+|    Memory   |   $100.0 |  * $139.0 |    NCIX   | Kingston HyperX Fury Black 16GB 4X4GB 2400MHZ DDR4 Non ECC CL15 DIMM Quad Channel Memory                                                   |
+|    Memory   |    $89.0 |  * $124.0 |    NCIX   | Corsair Vengeance Pro Red 16GB 2X8GB DDR3-2400 CL11 1.65V Non-ECC Intel XMP Desktop Memory                                                 |
+|    Memory   |   $193.0 |  * $269.0 |    NCIX   | Kingston HyperX Predator T2 16GB 4X4GB Kits DDR4-3000MHZ Non-ECC CL15 DIMM XMP Quad Channel Memory                                         |
+|    Memory   |   $136.0 |  * $189.0 |    NCIX   | Patriot Viper 3 16GB 2X8GB DDR3 1600MHz Non-ECC UDIMM 10-10-10-27 Sapphire Blue Dual Memory Kit                                            |
+|    Memory   |   $150.0 |  * $209.0 |    NCIX   | Kingston ValueRAM 16GB 2X8GB Kits DDR3-1600 CL11 NON-ECC SODIMM Dual Channel Memory                                                        |
+|    Memory   |   $204.0 |  * $284.0 |    NCIX   | Kingston HyperX Predator 16GB 4X4GB Kits DDR4-2800MHZ Non ECC CL14 DIMM XMP Quad Channel Memory                                            |
+|    Memory   |   $158.0 |  * $219.0 |    NCIX   | Kingston KVR21R15D4/16 16GB DDR4-2133MHZ ECC Reg CL15 DIMM DR X4 W/TS Memory                                                               |
+|    Memory   |   $120.0 |  * $167.0 |    NCIX   | Crucial Memory CT16G4RFD4213 16GB DDR4 X4 2133 ECC Registered 1.2V Retail                                                                  |
+|    Memory   |    $77.0 |  * $107.0 |    NCIX   | Kingston KVR16N11K2/16 16GB 2X8GB Kits DDR3-1600 NON-ECC CL11 DIMM Dual Channel Memory                                                     |
+|    Memory   |   $120.0 |  * $167.0 |    NCIX   | Kingston KVR13N9K2/16 16GB 2X8GB DDR3-1333 CL9 DIMM Non-ECC Dual Channel Memory Kit                                                        |
+|    Memory   |   $116.0 |  * $162.0 |    NCIX   | Crucial Memory CT2KIT102472BD160B 16GB(2X8) Kit DDR3 PC3 12800 ECC UDIMM 240P                                                              |
+|    Memory   |   $143.0 |  * $199.0 |    NCIX   | Kingston HyperX Predator T2 Black 16GB 4X4GB Kits DDR4-2133MHZ Non-ECC CL13 XMP Quad Channel Memory                                        |
+|    Memory   |   $118.0 |  * $165.0 |    NCIX   | Kingston 16GB 2X8GB 2133MHZ DDR3 NON-ECC CL11 DIMM XMP Predator Series                                                                     |
+|    Memory   |   $179.0 |  * $249.0 |    NCIX   | Kingston HyperX Predator T2 16GB 4X4GB Kits DDR4-2400MHZ Non-ECC CL12 DIMM XMP Quad Channel Memory                                         |
+|    Memory   |   $180.0 |  * $251.0 |    NCIX   | Kingston KVR1333D3E9SK2/16G 16GB 2X8GB Kits DDR3-1333 CL9 DIMM ECC Dual Channel Memory                                                     |
+|    Memory   |   $276.0 |  * $384.0 |    NCIX   | Kingston HyperX Predator T2 16GB 4X4GB Kits DDR4-2666MHZ Non-ECC CL13 DIMM XMP Quad Channel Memory                                         |
+|    Memory   |   $211.0 |  * $294.0 |    NCIX   | Kingston 16GB 1333MHz DDR3 Non-ECC CL9 DIMM (Kit of 2) HyperX Blu                                                                          |
+|    Memory   |   $181.0 |  * $252.0 |    NCIX   | Kingston KVR13LR9D4/16 16GB DDR3-1333 CL9 1.35V DIMM ECC Reg Single Channel Memory                                                         |
+|    Memory   |   $121.0 |  * $169.0 |   Newegg  | SAMSUNG 16GB 288-Pin DDR4 SDRAM ECC Registered DDR4 2133 (PC4 17000) Server Memory Model M393A2G40DB0-CPB                                  |
+|    Memory   |   $114.0 |  * $159.0 |   Newegg  | Crucial 16GB (2 x 8GB) 240-Pin DDR3 SDRAM ECC Unbuffered DDR3 1600 (PC3 12800) Server Memory Model CT2KIT102472BD160B                      |
+|    Memory   |   $114.0 |  * $159.0 |   Newegg  | Kingston 16GB 288-Pin DDR4 SDRAM ECC Registered DDR4 2133 (PC4 17000) Server Memory Model KVR21R15D4/16                                    |
+|    Memory   |   $114.0 |  * $159.0 |   Newegg  | Kingston 16GB 240-Pin DDR3 SDRAM ECC Registered DDR3 1600 Server Memory DR x4 Model KVR16R11D4/16                                          |
+|    Memory   |   $135.0 |  * $189.0 |   Newegg  | Crucial 16GB (2 x 8GB) 240-Pin DDR3 SDRAM ECC Unbuffered DDR3 1600 (PC3 12800) Server Memory Model CT2KIT102472BA160B                      |
+|    Memory   |   $286.0 |  * $399.0 |   Newegg  | Crucial 16GB (2 x 8GB) 288-Pin DDR4 SDRAM ECC DDR4 2133 (PC4 17000) Server Memory Model CT2K8G4RFS4213                                     |
+|    Memory   |   $126.0 |  * $176.0 |   Newegg  | Crucial 16GB 288-Pin DDR4 SDRAM ECC Registered DDR4 2133 (PC4 17000) Server Memory Model CT16G4RFD4213                                     |
+|    Memory   |   $112.0 |  * $157.0 |   Newegg  | Kingston 16GB 240-Pin DDR3 SDRAM ECC Registered DDR3 1333 Server Memory DR x4 w/TS Model KVR13R9D4/16                                      |
+|    Memory   |   $128.0 |  * $179.0 |   Newegg  | Kingston 16GB (4 x 4GB) 240-Pin DDR3 SDRAM ECC Registered DDR3 1600 (PC3 12800) Server Memory Model KVR16R11S8K4/16I                       |
+|    Memory   |   $140.0 |  * $195.0 |   Newegg  | Kingston 16GB 240-Pin DDR3 SDRAM ECC Registered DDR3 1866 (PC3 14900) Server Memory Model KVR18R13D4/16KF                                  |
+|    Memory   |   $114.0 |  * $159.0 |   Newegg  | Crucial 16GB 240-Pin DDR3 SDRAM ECC Registered DDR3 1600 (PC3 12800) Server Memory Model CT16G3ERSLD4160B                                  |
+|    Memory   |   $200.0 |  * $279.0 |   Newegg  | Kingston 16GB 288-Pin DDR4 SDRAM ECC Registered DDR4 2133 (PC4 17000) Server Memory Model KTL-TS421/16G                                    |
+|    Memory   |   $165.0 |  * $231.0 |   Newegg  | Kingston 16GB 240-Pin DDR3 SDRAM ECC Registered DDR3 1600 (PC3 12800) Low Voltage Server Memory Model KTL-TS316LV/16G                      |
+|    Memory   |   $114.0 |  * $159.0 |   Newegg  | Crucial 16GB 240-Pin DDR3 SDRAM ECC Registered DDR3 1600 (PC3 12800) Server Memory Model CT204872BB160B                                    |
+|    Memory   |   $110.0 |  * $154.0 |   Newegg  | Kingston ValueRAM 16GB 240-Pin DDR3 SDRAM ECC Registered DDR3 1600 Server Memory (Intel Validated ) Model KVR16R11D4/16I                   |
+|    Memory   |   $121.0 |  * $169.0 |   Newegg  | Kingston 16GB ECC Registered DDR3 1600 (PC3 12800) Server Memory Model KVR16R11D4/16HB                                                     |
+|    Memory   |    $96.0 |  * $134.0 |   Newegg  | Mushkin Enhanced Proline 16GB (2 x 8GB) 240-Pin DDR3 UDIMM ECC DDR3 1333 (PC3 10600) Server Memory Model 997044                            |
+|    Memory   |   $136.0 |  * $190.0 |   Newegg  | Crucial 16GB (2x8GB) 240-Pin DDR3 1600 (PC3 12800) Server Memory Model CT2KIT102472BB160B                                                  |
+|    Memory   |   $142.0 |  * $199.0 |   Newegg  | Kingston 16GB ECC Registered DDR3L 1600 Server Memory Model KVR16LR11D4/16HB                                                               |
+|    Memory   |   $135.0 |  * $189.0 |   Newegg  | Kingston 16GB 240-Pin DDR3 SDRAM System Specific Memory                                                                                    |
+|    Memory   |   $164.0 |  * $229.0 |   Newegg  | Crucial 16GB 240-Pin DDR3 SDRAM DDR3 1866 (PC3 14900) Memory For Mac Pro Systems Model CT16G3R186DM                                        |
+|    Memory   |   $150.0 |  * $209.0 |   Newegg  | Mushkin Enhanced 16GB (2 x 8GB) 240-Pin DDR3 SDRAM DDR3 1866 (PC3 14900) Memory for Apple Model 977136A                                    |
+|    Memory   |   $606.0 |  * $845.0 |   Newegg  | Axiom 16GB (2 x 8GB) 240-Pin DDR2 SDRAM ECC ECC Chipkill Registered DDR2 667 (PC2 5300) Server Memory Model 43V7356-AXA                    |
+|    Memory   |   $156.0 |  * $218.0 |   Newegg  | KINGSTON KTH-PL316-16G 16GB 1600MHZ REG ECC MODULE                                                                                         |
+|    Memory   |   $187.0 |  * $261.0 |   Newegg  | Kingston 16GB 240-Pin DDR3 1866 ECC Registered Memory KTL-TS318/16G                                                                        |
+|    Memory   |   $182.0 |  * $254.0 |   Newegg  | Kingston 16GB DDR3 1600 ECC Registered System Specific Memory Model KTD-PE316/16G                                                          |
+|    Memory   |   $173.0 |  * $242.0 |   Newegg  | Kingston 16GB DDR3 1600 ECC Registered System Specific Memory Model KTL-TS316/16G                                                          |
+|    Memory   |   $121.0 |  * $169.0 |   Newegg  | Kingston 16GB System Specific Memory                                                                                                       |
+|    Memory   |   $184.0 |  * $257.0 |   Newegg  | Kingston 16GB DDR3 1600 ECC Registered System Specific Memory Model KFJ-PM316/16G                                                          |
+|    Memory   |   $114.0 |  * $159.0 |   Newegg  | Kingston 16GB ECC Registered DDR3 1600 (PC3 12800) Server Memory Model KTH-PL316LV/16G                                                     |
+|    Memory   |   $119.0 |  * $165.0 | amazon.ca | Crucial 16GB Kit (8GBx2) DDR3L 1600MT/s (PC3-12800) DR x8 ECC UDIMM 240-Pin Server Memory CT2KIT102472BD160B                               |
+|    Memory   |   $233.0 |  * $325.0 | amazon.ca | Crucial 32GB Kit (16GBx2) DDR4 2133 MT/s (PC4-2133) CL15 DR x4 ECC Registered DIMM 288-Pin Server Memory CT2K16G4RFD4213                   |
+|    Memory   |   $112.0 |  * $156.0 | amazon.ca | Kingston HyperX FURY Memory Black - 16GB Kit (2x8GB) - DDR4 2133MHz - 16 GB (2 x 8 GB) - DDR4 SDRAM - 2133 MHz...                          |
+|    Memory   |   $121.0 |  * $168.0 | amazon.ca | Crucial 16GB Single DDR4 2133 MT/s (PC4-2133) CL15 DR x4 ECC Registered DIMM 288-Pin Server Memory CT16G4RFD4213                           |
+|    Memory   |   $530.0 |  * $739.0 | amazon.ca | Crucial 64GB Kit (16GBx4) DDR4 2133 MT/s (PC4-2133) CL15 DR x4 ECC Registered DIMM 288-Pin Server Memory CT4K16G4RFD4213                   |
+|    Memory   |   $157.0 |  * $219.0 | amazon.ca | HP 16GB 2Rx4 PC3L-10600R-9 Kit - 16 GB (1 x 16 GB) - DDR3 SDRAM - 1333 MHz DDR3-1333/PC3-10600 - ECC - Registered...                       |
+|    Memory   |   $153.0 |  * $213.0 | amazon.ca | 16gb 1333mhz Reg Ecc Low Voltage Module                                                                                                    |
+|    Memory   |   $145.0 |  * $202.0 | amazon.ca | 16gb 1333mhz Ddr3 Ecc Cl9 Dimm Kit 2                                                                                                       |
+|    Memory   |   $136.0 |  * $189.0 | amazon.ca | Komputerbay 16GB (4x 4GB) DDR2 PC2-6400F 800MHz ECC Fully Buffered FB-DIMM (240 PIN) 16 GB w/ MAC Heatspreaders...                         |
+|    Memory   |    $92.0 |  * $128.0 | amazon.ca | 16GB (4X4GB) NEMIX RAM Memory for APPLE MAC PRO 2006-2007 MA356LL/A - A1186 - DDR2 667MHz ECC FB DIMM                                      |
+|    Memory   |   $123.0 |  * $171.0 | amazon.ca | 16gb 1600mhz Ddr3 Ecc Reg Cl11 Dimm Dr X4                                                                                                  |
+|    Memory   |   $174.0 |  * $242.0 | amazon.ca | Kingston HyperX FURY Black 16GB Kit (4x4GB) 2133MHz DDR4 Non-ECC CL14 DIMM Desktop Memory (HX421C14FBK4/16)                                |
+|    Case2    |  * $89.0 |    $124.0 |   MicroC  | Corsair Obsidian 250D Mini ITX Case                                                                                                        |
+|    Case2    |  * $49.0 |     $68.0 |   MicroC  | Corsair Obsidian Series 250D Mini ITX PC Case (Open-Box)                                                                                   |
+|    Case2    |    $93.0 |  * $129.0 |    NCIX   | Corsair Obsidian 250D mITX Black Gaming Case 2X3.5 2X2.5 Front USB3.0 Audio No PSU                                                         |
+|    Case2    |    $85.0 |  * $119.0 |   Newegg  | Corsair Obsidian Series 250D (CC-9011047-WW) Black Computer Case                                                                           |
+|    Case2    |   $109.0 |  * $152.0 |   Newegg  | Obsidian Series 250d Mini Itx                                                                                                              |
+|    Case2    |    $89.0 |  * $124.0 | amazon.ca | Corsair Obsidian 250D Mini ITX Case CC-9011047-WW                                                                                          |
+|    Case2    |   $166.0 |  * $231.0 | amazon.ca | Corsair Obsidian 250D Mini ITX Case CC-9011047-WW by Corsair                                                                               |
+|     CPU     | * $209.0 |    $291.0 |   MicroC  | Intel Xeon E3 1231V3 3.5GHz LGA 1150 Boxed Processor                                                                                       |
+|     CPU     | * $279.0 |    $388.0 |   MicroC  | Intel Xeon E3 1276V3 3.6GHz LGA 1150 Boxed Processor                                                                                       |
+|     CPU     | * $239.0 |    $333.0 |   MicroC  | Intel Xeon E3 1246V3 3.5GHz LGA 1150 Boxed Processor                                                                                       |
+|     CPU     | * $229.0 |    $319.0 |   MicroC  | Intel Xeon E3 1241V3 3.5GHz LGA 1150 Boxed Processor                                                                                       |
+|     CPU     | * $287.0 |    $400.0 |   MicroC  | Intel Xeon E3 1275V2 3.5GHz LGA 1155 Boxed Processor                                                                                       |
+|     CPU     |   $507.0 |  * $706.0 |    NCIX   | Lenovo Thinkserver RS140 Intel Xeon E3-1225V3 3.2GHZ 4GB DDR3 RAID 0/1/5/10 DVDRW 1U 1P Rack Server                                        |
+|     CPU     |   $280.0 |  * $389.0 |    NCIX   | Intel Xeon E3-1231V3 4CORES 3.4G FCLGA1150 8MB Cache 5GT/S 80W Processor                                                                   |
+|     CPU     |   $308.0 |  * $429.0 |    NCIX   | Intel Xeon E3-1241V3 4C 3.5G 8MB 80W Tdp DDR3 LGA1150 Retail Box                                                                           |
+|     CPU     |   $218.0 |  * $303.0 |    NCIX   | Intel Xeon E3-1220V3 LGA1150 3.1 G DDR3-1333/1600 22NM MM#928633                                                                           |
+|     CPU     |   $214.0 |  * $297.0 |    NCIX   | Supermicro X10SLH-F Xeon E3 LGA1150 DDR3 ECC C222 6SATA 3PCIE IPMI 2GBE mATX Motherboard                                                   |
+|     CPU     |   $512.0 |  * $713.0 |    NCIX   | Lenovo Thinkserver TS410 Intel Xeon E3-1225V3 4GB P4600 DVDRW No HDD 280W Tower Server                                                     |
+|     CPU     |   $176.0 |  * $245.0 |    NCIX   | ASUS P9D-V 1 X Socket LGA1150 ATX Intel C224 Xeon E3-1200 V3 DDR3 1333/1600 Server Motherboard                                             |
+|     CPU     |  $1134.0 | * $1578.0 |    NCIX   | Lenovo Thinkstation P300 Intel Xeon E3-1246 V3 8GB 180GB SSD DVDRW Windows 7/8 Pro Workstation                                             |
+|     CPU     |   $174.0 |  * $242.0 |    NCIX   | Intel Xeon E3-1200 LGA1150 DDR3 SATA 2GBE mATX Server Motherboard                                                                          |
+|     CPU     |   $237.0 |  * $330.0 |    NCIX   | Intel Xeon E3-1200 LGA1150 DDR3 SATA mATX Server Motherboard                                                                               |
+|     CPU     |   $181.0 |  * $253.0 |    NCIX   | Supermicro X10SLL-F Xeon E3 LGA1150 DDR3 ECC C222 6SATA 3PCIE IPMI 2GBE mATX Motherboard                                                   |
+|     CPU     |   $676.0 |  * $941.0 |    NCIX   | HP ProLiant 4U Micro Tower ML310E GEN8 V2 Server Intel Xeon E3-1230V3 3.3GHZ 8GB 4 LFF PS                                                  |
+|     CPU     |   $249.0 |  * $347.0 |    NCIX   | Supermicro Motherboard X10SL7-F Xeon E3 LGA1150 C222 DDR3 6SATA 8SAS 2PCIE ECC mATX Retail                                                 |
+|     CPU     |  $1216.0 | * $1693.0 |    NCIX   | HP Z230 SFF Intel Xeon E3-1241v3 3.5 16GB 256GB SSD NVIDIA Quadro K620 2GB Win 7/8.1 Pro Workstation                                       |
+|     CPU     |   $186.0 |  * $259.0 |    NCIX   | Intel Xeon E3-1200 LGA1155 DDR3 SATA mATX Server Motherboard                                                                               |
+|     CPU     |   $242.0 |  * $336.0 |    NCIX   | Intel Xeon E3 1231V3 4 Core 3.4GHZ LGA1150 8MB 80W 5GT/S Denlow Processor for Supermicro                                                   |
+|     CPU     |   $666.0 |  * $928.0 |    NCIX   | Lenovo Thinkserver TS440 Intel Xeon E3-1225 4GB 5U Server No HDD                                                                           |
+|     CPU     |   $613.0 |  * $853.0 |    NCIX   | Lenovo Thinkserver TS140 Intel Xeon E3 1225V3 4GB 500GB DVD Tower Server 1YR Onsite Warranty                                               |
+|     CPU     |   $195.0 |  * $272.0 |    NCIX   | Intel Xeon E3 1220LV3 2 Core 1.1GHz LGA1150 4MB 13W 5GT/s Denlow Processor for Supermicro                                                  |
+|     CPU     |   $215.0 |  * $299.0 |    NCIX   | Intel Xeon E3 1255 V2 Quad Core 3.2GHZ LGA1155 8MB 5 GT/S 77W Carlow Processor for Supermicro                                              |
+|     CPU     |   $250.0 |  * $349.0 |   Newegg  | Intel Xeon E3-1231V3 3.4 GHz LGA 1150 80W BX80646E31231V3 Server Processor                                                                 |
+|     CPU     |   $200.0 |  * $279.0 |   Newegg  | Intel Xeon E3-1220 V3 3.1 GHz LGA 1150 80W BX80646E31220V3 Server Processor                                                                |
+|     CPU     |   $272.0 |  * $379.0 |   Newegg  | Intel Xeon E3-1241 v3 Haswell 3.5 GHz 8MB  L3 Cache LGA 1150 80W Server Processor BX80646E31241V3                                          |
+|     CPU     |   $229.0 |  * $319.0 |   Newegg  | Intel Xeon E3-1225 v5 3.3 GHz LGA 1151 80W BX80662E31225V5 Server Processor                                                                |
+|     CPU     |   $365.0 |  * $509.0 |   Newegg  | Intel Xeon E3-1275 v5 3.6 GHz LGA 1151 80W BX80662E31275V5 Server Processor                                                                |
+|     CPU     |   $286.0 |  * $399.0 |   Newegg  | Intel Xeon E3-1240 v5 3.5 GHz LGA 1151 80W BX80662E31240V5 Server Processor                                                                |
+|     CPU     |   $268.0 |  * $374.0 |   Newegg  | Intel Xeon E3-1230 v5 3.4 GHz LGA 1151 80W BX80662E31230V5 Server Processor                                                                |
+|     CPU     |   $247.0 |  * $344.0 |   Newegg  | Intel Xeon E3-1230V3 3.3 GHz LGA 1150 80W BX80646E31230V3 Server Processor                                                                 |
+|     CPU     |   $211.0 |  * $294.0 |   Newegg  | Intel Xeon E3-1220 v5 3.0 GHz LGA 1151 80W BX80662E31220V5 Server Processor                                                                |
+|     CPU     |   $286.0 |  * $399.0 |   Newegg  | Intel Xeon E3-1246 v3 Haswell 3.5GHz 8MB  L3 Cache LGA 1150 84W Server Processor BX80646E31246V3                                           |
+|     CPU     |   $344.0 |  * $479.0 |   Newegg  | Intel Xeon E3-1276 v3 Haswell 3.6GHz 8MB  L3 Cache LGA 1150 84W Server Processor BX80646E31276V3                                           |
+|     CPU     |   $297.0 |  * $414.0 |   Newegg  | Intel Xeon E3-1245 v5 3.5 GHz LGA 1151 80W BX80662E31245V5 Server Processor                                                                |
+|     CPU     |   $344.0 |  * $479.0 |   Newegg  | Intel Xeon E3-1270 v5 3.6 GHz LGA 1151 80W BX80662E31270V5 Server Processor                                                                |
+|     CPU     |   $214.0 |  * $299.0 |   Newegg  | Intel Xeon E3-1226 v3 Haswell 3.3GHz 8MB  L3 Cache LGA 1150 84W Server Processor BX80646E31226V3                                           |
+|     CPU     |   $336.0 |  * $469.0 |   Newegg  | Intel Xeon E3-1271 v3 Haswell 3.6GHz 8MB  L3 Cache LGA 1150 80W Server Processor BX80646E31271V3                                           |
+|     CPU     |  $1188.0 | * $1654.0 |   Newegg  | HP Z230 (F1M21UT#ABA) Tower Workstation Intel Xeon E3 -1231 v3 (3.4 GHz) 8GB DDR3 1TB HDD NVIDIA Quadro K420 Windows 7 Professional 64-Bit |
+|     CPU     |  $1129.0 | * $1572.0 |   Newegg  | Lenovo ThinkStation P300 30AH001TUS Tower Workstation - 1 x Intel Xeon E3-1246 v3 3.50 GHz                                                 |
+|     CPU     |   $976.0 | * $1359.0 |   Newegg  | Lenovo ThinkStation P300 30AH004MUS Tower Workstation - 1 x Intel Xeon E3-1241 v3 3.50 GHz                                                 |
+|     CPU     |  $1072.0 | * $1493.0 |   Newegg  | Lenovo ThinkStation P300 30AH001TCA Mini-tower Workstation - 1 x Intel Xeon E3-1246 v3 3.50 GHz                                            |
+|     CPU     |  $1099.0 | * $1530.0 |   Newegg  | Lenovo ThinkStation P300 30AH004MUS Tower Workstation - 1 x Intel Xeon E3-1241 v3 3.50 GHz                                                 |
+|     CPU     |   $229.0 |  * $320.0 |   Newegg  | Intel Xeon E3-1220 v3 Quad-core (4 Core) 3.10 GHz Processor                                                                                |
+|     CPU     |  $1064.0 | * $1482.0 |   Newegg  | TS140 E3 1225v3 4GB 500GB                                                                                                                  |
+|     CPU     |   $244.0 |  * $339.0 | amazon.ca | Intel Xeon Processor E3-1241 v3, 8M Cache, 3.5 GHz, BX80646E31241V3                                                                        |
+|     CPU     |   $264.0 |  * $368.0 | amazon.ca | Intel Xeon Processor E3-1231V3B 3.4 4 LGA 1150 (BX80646E31231V3)                                                                           |
+|     CPU     |   $280.0 |  * $389.0 | amazon.ca | Intel Xeon Processor E3-1246 v3, 8M Cache, 3.5 GHz, BX80646E31246V3                                                                        |
+|     CPU     |   $238.0 |  * $332.0 | amazon.ca | Intel Xeon E3-1245V3 Haswell 3.4GHz 8MB L3 Cache LGA 1150 84W Quad-Core Server Processor BX80646E31245V3                                   |
+|     CPU     |   $236.0 |  * $329.0 | amazon.ca | Intel Xeon Processor E3-1226 v3, 8M Cache, 3.3 GHz, BX80646E31226V3                                                                        |
+|     CPU     |   $312.0 |  * $434.0 | amazon.ca | Intel Xeon E3-1240V2 3.40 GHz Processor - Socket H2 LGA-1155                                                                               |
+|     CPU     |   $301.0 |  * $420.0 | amazon.ca | Intel Xeon Processor E3-1276 V3, 8MB Cache, 3.60GHz, BX80646E31276V3                                                                       |
+|     CPU     |   $219.0 |  * $305.0 | amazon.ca | Intel Xeon Quad-Core E3-1230V2 3.3GHz 5.0GT/s 8MB LGA1155 Processor, Retail BX80637E31230V2                                                |
+|     CPU     |   $247.0 |  * $344.0 | amazon.ca | Xeon E3-1220v3, 3.1/3.5ghz, Fclga1150, 8mb, 4 Cores/4 Threads, 80w,Max Memory -                                                            |
+|     CPU     |  $1093.0 | * $1522.0 | amazon.ca | Intel BX80646E31230V3 Xeon E3-1230V3 Haswell 3.3GHz 8MB L3 Cache LGA 1150 80W Quad-Core Server Processor                                   |
+|     CPU     |   $295.0 |  * $410.0 | amazon.ca | HP Z230 Mini-tower Workstation - 1 x Intel Xeon E3-1241 v3 3.50 GHz - 8 GB RAM - 1 TB HDD - DVD-Writer - NVIDIA...                         |
+|     CPU     |   $271.0 |  * $378.0 | amazon.ca | Intel Xeon E3-1230V3 Haswell, 3.3GHz, 8MB L3 Cache LGA 1150, 80W Quad-Core Server Processor BX80646E31230V3                                |
+|     CPU     |   $309.0 |  * $431.0 | amazon.ca | Xeon Qc E3-1225 Processor                                                                                                                  |
++-------------+----------+-----------+-----------+--------------------------------------------------------------------------------------------------------------------------------------------+

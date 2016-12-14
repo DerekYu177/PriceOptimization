@@ -1,0 +1,34 @@
+Web_Scraping
+	Input (search_term)
+	Ouput (raw_data, search_term) 	
+		[["description", "NCIX", price],
+		["description2", "amazon.ca", price2],
+		["description3", "Newegg",price3]]
+	Functions:
+		raw_data : ncix(search_term) 
+		raw_data : amazon(search_term)
+		raw_data : newegg(search_term)
+
+String_Analysis
+	Input (raw_data, search_term)
+	Output (mod_data) 
+		CPU : [CPU_Name, Clock Speed]
+		if not CPU
+			skip
+	Functions:
+		col : keyword_filter(raw_data, search_term)
+		mod_data : zipper(raw_data, col)
+
+Tabular_Combination
+	Input (raw_data, mod_data)
+	Output (F_data) : 
+		[["description", mod_data[0], "NCIX", price],
+		["description2", mod_data[1], "amazon.ca", price2],
+		[]]
+	Functions:
+		
+
+Write_File
+	Input (F_data)
+	Output (None)
+
