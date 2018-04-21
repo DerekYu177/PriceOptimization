@@ -1,3 +1,9 @@
+# from bs4 import BeautifulSoup as bs
+from urllib import request, parse
+from lxml import html
+import argparse
+import sys
+
 #This future price_optimizer is planned to be more modular than current
 #by using objects instead of multi-dimensional lists, I hope we future-proof ourself.
 
@@ -8,20 +14,35 @@ Modified on Dec 7th, 2017
 @author: derekyu177
 '''
 
-import argparse
-import sys
-
 class Search:
 	def __init__(self, name, config):
 		self.name = name
 		self.config = config
+
+	def _search_url(self):
+		site = "https://www.newegg.ca"
+		path = "/Product/ProductList.aspx"
+		query = "?"
+		parameters = {
+			"Submit": "ENE",
+			"Order": "BESTMATCH",
+			"Description": self.name,
+		}
+		return site + path + query + parse.urlencode(parameters)
+
+	def search(self):
+		raw_html = request.urlopen(self._search_url()).read()
+		document = html.document_fromstring(raw_html)
+		element = document.xpath("//div[@class=list-wrap]")
+		# looking for list-wrap class
+		import pdb; pdb.set_trace()
+
 
 def _print_configurations(args):
 	product = "Searching for " + args.product
 	verbose = "Verbosity level = " + str(args.verbose)
 
 	plural = " pages" if args.pages > 1 else " page"
-
 	pages_to_scrape = "Will scrape " + str(args.pages) + plural
 
 	output_to_screen = "Output to screen = " + str(args.output)
@@ -31,6 +52,8 @@ def _print_configurations(args):
 
 	for configuration in configurations:
 		print(configuration)
+
+	search_result = Search(args.product, configurations).search()
 
 if __name__ == "__main__":
 	if len(sys.argv) == 1:
