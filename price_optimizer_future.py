@@ -13,11 +13,31 @@ Modified on Dec 7th, 2017
 
 @author: derekyu177
 '''
+class Reporter:
+    def report_configuration(self, args):
+        product = "Searching for " + args.product
+        verbose = "Verbosity level = " + str(args.verbose)
+
+        plural = " pages" if args.pages > 1 else " page"
+        pages_to_scrape = "Will scrape " + str(args.pages) + plural
+
+        output_to_screen = "Output to screen = " + str(args.output)
+        filename = "Appending to file: " + str(args.filename)
+
+        for configuration in [product, verbose, pages_to_scrape, output_to_screen, filename]:
+            print(configuration)
+
+    def __init__(self, args):
+        self.args = args
+        self.report_configuration(args)
+        products = Search(args.product).search(args.pages_to_scrape)
+        #TODO: now that we have the products, we have to decide what to do with
+        #them
 
 class Search:
-	def __init__(self, name, config):
+	def __init__(self, name):
 		self.name = name
-		self.config = config
+        self.site = self._search_url()
 
 	def _search_url(self):
 		site = "https://www.newegg.ca"
@@ -30,30 +50,19 @@ class Search:
 		}
 		return site + path + query + parse.urlencode(parameters)
 
-	def search(self):
-		raw_html = request.urlopen(self._search_url()).read()
+    def _get_products(self):
+		raw_html = request.urlopen(self.site).read()
 		document = html.document_fromstring(raw_html)
-		element = document.xpath("//div[@class=list-wrap]")
-		# looking for list-wrap class
-		import pdb; pdb.set_trace()
+		element = document.xpath("//div[contains(@class, 'item-container')]")
 
+	def search(self):
+        product_elements = self._get_products()
 
-def _print_configurations(args):
-	product = "Searching for " + args.product
-	verbose = "Verbosity level = " + str(args.verbose)
+        products = []
+        for element in product_elements:
+            products.append(Product(element))
 
-	plural = " pages" if args.pages > 1 else " page"
-	pages_to_scrape = "Will scrape " + str(args.pages) + plural
-
-	output_to_screen = "Output to screen = " + str(args.output)
-	filename = "Appending to file: " + str(args.filename)
-
-	configurations = [product, verbose, pages_to_scrape, output_to_screen, filename]
-
-	for configuration in configurations:
-		print(configuration)
-
-	search_result = Search(args.product, configurations).search()
+        return products
 
 if __name__ == "__main__":
 	if len(sys.argv) == 1:
@@ -68,4 +77,4 @@ if __name__ == "__main__":
 	parser.add_argument('-f', '--filename', default='searches.txt', help='specify the file to append results to')
 	args = parser.parse_args()
 
-	_print_configurations(args)
+    Reporter(args).report
