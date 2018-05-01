@@ -3,3 +3,6 @@
 
 # ignore compiled stuff
 *.pyc
+
+# ctag support
+tags
