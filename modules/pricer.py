@@ -1,4 +1,5 @@
 import os
+from itertools import chain
 from urllib import request, parse
 from lxml import html
 import tableprint as tp
@@ -60,9 +61,8 @@ class Reporter(object):
 class Searcher(object):
     def __init__(self, name):
         self.name = name
-        self.site = self._search_url()
 
-    def _search_url(self):
+    def _search_url(self, page_number):
         site = "https://www.newegg.ca"
         path = "/Product/ProductList.aspx"
         query = "?"
@@ -70,16 +70,26 @@ class Searcher(object):
             "Submit": "ENE",
             "Order": "BESTMATCH",
             "Description": self.name,
+            "Page": page_number,
         }
-        return site + path + query + parse.urlencode(parameters)
+        full_url = site + path + query + parse.urlencode(parameters)
+        print('searched site: {}'.format(full_url))
+        return full_url
 
     def _get_products(self, number_of_pages):
-        #TODO: take number_of_pages into account
-        raw_html = request.urlopen(self.site).read()
-        document = html.document_fromstring(raw_html)
-        items = document.xpath("//a[contains(@class, 'item-title')]")
-        prices = document.xpath("//li[contains(@class, 'price-current')]")
-        return zip(items, prices)
+        zipped_products = []
+
+        for page_number in range(1, 1 + number_of_pages):
+            self.site = self._search_url(page_number)
+
+            raw_html = request.urlopen(self.site).read()
+            document = html.document_fromstring(raw_html)
+            items = document.xpath("//a[contains(@class, 'item-title')]")
+            prices = document.xpath("//li[contains(@class, 'price-current')]")
+
+            zipped_products.append(zip(items, prices))
+
+        return chain(*zipped_products)
 
     def search(self, number_of_pages):
         products = self._get_products(number_of_pages)
