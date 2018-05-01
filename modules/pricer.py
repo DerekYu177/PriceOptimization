@@ -1,3 +1,4 @@
+import os
 from urllib import request, parse
 from lxml import html
 import tableprint as tp
@@ -21,18 +22,37 @@ class Reporter(object):
         if args.output:
             self.write_to_screen()
 
-        write_to_file()
+        self.write_to_file()
         #TODO: now that we have the products, we have to decide what to do with
         #them
 
     def write_to_file(self):
-        import pdb; pdb.set_trace()
+        pass
 
     def write_to_screen(self):
         tp.banner('Looking up: {}'.format(self.args.product))
-        import pdb; pdb.set_trace()
-        max_width = max(self.products)
-        tp.table(self.products, ['items', 'prices'], width)
+        item_width, price_width = self._fit_screen()
+        tp.dataframe(self.products, width=(item_width, price_width))
+
+    def _fit_screen(self):
+        screen_width = os.get_terminal_size(0)[0]
+        price_width = self.products['price'] \
+                .apply(lambda x: len(str(x))).max()
+
+        padding = 7
+
+        # we want to stretch the name out to edge of the screen
+        # with proper spacing for the price
+
+        available_width = screen_width - price_width - padding
+
+        self.products['item'] = self.products['item'] \
+                .apply(lambda x: self._conditional_trucation(available_width, x))
+
+        return available_width, price_width
+
+    def _conditional_trucation(self, width, line):
+        return line if len(line) < width else line[:width-3] + '...'
 
     def report(self):
         pass
@@ -63,10 +83,21 @@ class Searcher(object):
 
     def search(self, number_of_pages):
         products = self._get_products(number_of_pages)
-        products = [Product(item, price) for item, price in products]
-        return
+        self.products = [Product(item, price) for item, price in products]
+        self.df = pd.DataFrame([p.data() for p in self.products])
+
+        # sort by cheapest first TODO: make this togglable
+        return self.df.sort_values(by=['price'], ascending=True)
 
 class Product(object):
+
+    """
+    While the object Product does indeed capture the properties of each
+    product, it does not represent the actual product, the representation is
+    later transformed into a pandas dataframe
+
+    The products class will take care of which attributes that we represent
+    """
 
     def clean_price(self, price):
         price_information = [e.text for e in price]
@@ -79,15 +110,16 @@ class Product(object):
         except IndexError as exception: # there was no offer information
             offers = None
 
-        return price
+        return float(price.replace(",", ""))
+
+    def data(self):
+        return { attr:getattr(self, attr) for attr in self.__dict__.keys() }
 
     def __repr__(self):
-        return {
-            'Item': str(self.item),
-            'Price': float(self.price),
-            'Item Name Length': len(self.item)
-        }
+        return "Product({})".format(
+            str(self.data()).strip("{}").replace(": ", "=").replace("'", "")
+        )
 
     def __init__(self, item, price):
-        self.item = item.text_content()
+        self.item = str(item.text_content())
         self.price = self.clean_price(price)
