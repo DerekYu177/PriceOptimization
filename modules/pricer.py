@@ -31,12 +31,15 @@ class Reporter(object):
         pass
 
     def write_to_screen(self):
-        tp.banner('Looking up: {}'.format(self.args.product))
-        item_width, price_width = self._fit_screen()
+        screen_width, item_width, price_width = self._fit_screen()
+        tp.banner(
+            'Looking up: {}'.format(self.args.product),
+            width=screen_width
+        )
         tp.dataframe(self.products, width=(item_width, price_width))
 
     def _fit_screen(self):
-        screen_width = os.get_terminal_size(0)[0]
+        usable_screen_width = os.get_terminal_size(0)[0] - 2
         price_width = self.products['price'] \
                 .apply(lambda x: len(str(x))).max()
 
@@ -45,12 +48,14 @@ class Reporter(object):
         # we want to stretch the name out to edge of the screen
         # with proper spacing for the price
 
-        available_width = screen_width - price_width - padding
+        item_width = usable_screen_width - price_width - padding
 
         self.products['item'] = self.products['item'] \
-                .apply(lambda x: self._conditional_trucation(available_width, x))
+                .apply(lambda x: self._conditional_trucation(item_width, x))
 
-        return available_width, price_width
+        # usable screen width must account for the edges
+
+        return usable_screen_width, item_width, price_width
 
     def _conditional_trucation(self, width, line):
         return line if len(line) < width else line[:width-3] + '...'
