@@ -13,6 +13,9 @@ def report_configuration(args):
     product = "Searching for " + args.product
     verbose = "Verbosity level = " + str(args.verbose)
 
+    if args.pages == 0:
+        raise NotImplementedError
+
     plural = " pages" if args.pages > 1 else " page"
     pages_to_scrape = "Will scrape " + str(args.pages) + plural
 
@@ -35,7 +38,8 @@ if __name__ == "__main__":
     parser.add_argument('-f', '--filename', default='searches.txt', help='specify the file to append results to')
     args = parser.parse_args()
 
-    report_configuration(args)
+    if args.verbose:
+        report_configuration(args)
 
     Reporter(args).report()
 

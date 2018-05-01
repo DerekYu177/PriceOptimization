@@ -18,7 +18,7 @@ class Reporter(object):
 
     def __init__(self, args):
         self.args = args
-        self.products = Searcher(args.product).search(args.pages)
+        self.products = Searcher(args.product, verbose=args.verbose).search(args.pages)
 
         if args.output:
             self.write_to_screen()
@@ -59,8 +59,9 @@ class Reporter(object):
         pass
 
 class Searcher(object):
-    def __init__(self, name):
+    def __init__(self, name, verbose=True):
         self.name = name
+        self.verbose = verbose
 
     def _search_url(self, page_number):
         site = "https://www.newegg.ca"
@@ -73,7 +74,10 @@ class Searcher(object):
             "Page": page_number,
         }
         full_url = site + path + query + parse.urlencode(parameters)
-        print('searched site: {}'.format(full_url))
+
+        if self.verbose:
+            print('searched site: {}'.format(full_url))
+
         return full_url
 
     def _get_products(self, number_of_pages):
