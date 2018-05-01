@@ -1,0 +1,5 @@
+# ignoring all search result files
+*.txt
+
+# ignore compiled stuff
+*.pyc
