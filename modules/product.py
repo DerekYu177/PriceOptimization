@@ -8,7 +8,7 @@ class Searcher(object):
         self.name = name
         self.verbose = verbose
 
-    def _search_url(self, page_number):
+    def _url(self, page_number):
         site = "https://www.newegg.ca"
         path = "/Product/ProductList.aspx"
         query = "?"
@@ -25,15 +25,49 @@ class Searcher(object):
 
         return full_url
 
+    def _max_page_number(self, document):
+        pagination = document.xpath("//span[contains(@class, 'list-tool-pagination-text')]")
+
+        # there will be an even number of elements
+        # half for the top, and half for the bottom
+        # each half of elements has:
+        #   the current number of elements on the screen
+        #   the total number of elements
+        #   the current page
+        #   the total number of pages
+
+        half = pagination[:int(len(pagination)/2)]
+
+        current_elements, all_elements = [e.text for e in half[0].xpath('strong')]
+        pages = [e.text for e in half[1].xpath('strong')][0]
+
+        current_page, total_pages = pages.split('/')
+        return int(total_pages)
+
+    def _page(self, page_number):
+        url = self._url(page_number)
+        raw_html = request.urlopen(url).read()
+        return html.document_fromstring(raw_html)
+
     def _get_products(self, number_of_pages):
         product_list = []
 
-        for page_number in range(1, 1 + number_of_pages):
-            site = self._search_url(page_number)
+        # search one page by default
+        primary_page = self._page(1)
+        first_page_products = primary_page.xpath("//div[contains(@class, 'item-container')]")
+        product_list.extend(first_page_products)
 
-            raw_html = request.urlopen(site).read()
-            document = html.document_fromstring(raw_html)
+        # early return
+        if number_of_pages == 1:
+            return product_list
 
+        # scrape all pages
+        if number_of_pages == 0:
+            number_of_pages = self._max_page_number(primary_page)
+
+        # scrape remaining pages
+        for page_number in range(2, 1+number_of_pages):
+            document = self._page(page_number)
             products = document.xpath("//div[contains(@class, 'item-container')]")
             product_list.extend(products)
 

@@ -9,15 +9,19 @@ Created on April 21st, 2018
 @author: derekyu177
 '''
 
+def _pages(pages):
+    if pages == 0:
+        return "Will scrape all pages"
+    elif pages == 1:
+        return "Will scrape 1 page"
+    else:
+        return "Will scrape {} pages".format(pages)
+
 def report_configuration(args):
     product = "Searching for " + args.product
     verbose = "Verbosity level = " + str(args.verbose)
 
-    if args.pages == 0:
-        raise NotImplementedError
-
-    plural = " pages" if args.pages > 1 else " page"
-    pages_to_scrape = "Will scrape " + str(args.pages) + plural
+    pages_to_scrape = _pages(args.pages)
 
     output_to_screen = "Output to screen = " + str(args.output)
     filename = "Appending to file: " + str(args.filename)
