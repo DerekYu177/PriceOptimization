@@ -1,5 +1,6 @@
 import os
 from itertools import chain
+import copy
 from urllib import request, parse
 from lxml import html
 import tableprint as tp
@@ -20,6 +21,9 @@ class Reporter(object):
         self.args = args
         self.products = Searcher(args.product, verbose=args.verbose).search(args.pages)
 
+        if args.only_available:
+            self.filter_stock()
+
         if args.output:
             self.write_to_screen()
 
@@ -27,38 +31,61 @@ class Reporter(object):
         #TODO: now that we have the products, we have to decide what to do with
         #them
 
+    def filter_stock(self):
+        self.products = self.products[self.products['in_stock'] == True]
+
+
     def write_to_file(self):
         pass
 
     def write_to_screen(self):
-        screen_width, item_width, price_width = self._fit_screen()
+        screen_width, widths = self._fit_screen()
+
         tp.banner(
             'Looking up: {}'.format(self.args.product),
             width=screen_width
         )
-        tp.dataframe(self.products, width=(item_width, price_width))
+
+        if self.products.empty:
+            tp.banner(
+                'ERROR: No results',
+                width=screen_width
+            )
+        else:
+            tp.dataframe(self.products, width=widths)
 
     def _fit_screen(self):
-        usable_screen_width = os.get_terminal_size(0)[0] - 2
-        price_width = self.products['price'] \
-                .apply(lambda x: len(str(x))).max()
+        screen_width = os.get_terminal_size(0)[0]-2
 
-        padding = 7
+        # we get the maximum width for each category
+        # that is not 'item'
 
-        # we want to stretch the name out to edge of the screen
-        # with proper spacing for the price
+        columns = self.products.columns.values.tolist()
 
-        item_width = usable_screen_width - price_width - padding
+        fixed_columns = copy.copy(columns)
+        fixed_columns.remove('item')
+        column_widths = { column:self._max_width_for(column) for column in
+                fixed_columns }
+
+        item_width = screen_width - sum(column_widths.values()) - 8 # padding
+        column_widths.update({ 'item':item_width })
 
         self.products['item'] = self.products['item'] \
-                .apply(lambda x: self._conditional_trucation(item_width, x))
+                .apply(lambda x: self._item_trucation(item_width, x))
 
-        # usable screen width must account for the edges
+        widths = tuple([column_widths[column] for column in columns])
+        return screen_width, widths
 
-        return usable_screen_width, item_width, price_width
-
-    def _conditional_trucation(self, width, line):
+    def _item_trucation(self, width, line):
         return line if len(line) < width else line[:width-3] + '...'
+
+    def _max_width_for(self, item):
+        product_width = self.products[item] \
+                .apply(lambda x: len(str(x))) \
+                .max()
+
+        name_width = len(str(item))
+        return max(product_width, name_width)
 
     def report(self):
         pass
@@ -86,23 +113,22 @@ class Searcher(object):
         return full_url
 
     def _get_products(self, number_of_pages):
-        zipped_products = []
+        product_list = []
 
         for page_number in range(1, 1 + number_of_pages):
-            self.site = self._search_url(page_number)
+            site = self._search_url(page_number)
 
-            raw_html = request.urlopen(self.site).read()
+            raw_html = request.urlopen(site).read()
             document = html.document_fromstring(raw_html)
-            items = document.xpath("//a[contains(@class, 'item-title')]")
-            prices = document.xpath("//li[contains(@class, 'price-current')]")
 
-            zipped_products.append(zip(items, prices))
+            products = document.xpath("//div[contains(@class, 'item-container')]")
+            product_list.extend(products)
 
-        return chain(*zipped_products)
+        return product_list
 
     def search(self, number_of_pages):
         products = self._get_products(number_of_pages)
-        self.products = [Product(item, price) for item, price in products]
+        self.products = [Product(container.__deepcopy__(0)) for container in products]
         self.df = pd.DataFrame([p.data() for p in self.products])
 
         # sort by cheapest first TODO: make this togglable
@@ -118,18 +144,32 @@ class Product(object):
     The products class will take care of which attributes that we represent
     """
 
-    def clean_price(self, price):
+    def get_price(self, container):
+        price = container.xpath("//li[contains(@class, 'price-current')]")[0]
+
         price_information = [e.text for e in price]
         useful_information = price_information[1:-1]
+
         # pricing is the first two, the last is the offers
         price = ''.join(useful_information[0:1])
 
+        # no offer information
         try:
             offers = useful_information[2]
-        except IndexError as exception: # there was no offer information
+        except IndexError as exception:
             offers = None
 
         return float(price.replace(",", ""))
+
+    def is_in_stock(self, container):
+        stock_info = container.xpath("//p[contains(@class, 'item-promo')]")
+
+        try:
+            stock = stock_info[0].text_content() != "OUT OF STOCK"
+        except IndexError:
+            stock = True
+
+        return stock
 
     def data(self):
         return { attr:getattr(self, attr) for attr in self.__dict__.keys() }
@@ -139,6 +179,10 @@ class Product(object):
             str(self.data()).strip("{}").replace(": ", "=").replace("'", "")
         )
 
-    def __init__(self, item, price):
+    def __init__(self, container):
+        item = container.xpath("//a[contains(@class, 'item-title')]")[0]
+
         self.item = str(item.text_content())
-        self.price = self.clean_price(price)
+        self.price = self.get_price(container)
+        self.in_stock = self.is_in_stock(container)
+

@@ -34,6 +34,7 @@ if __name__ == "__main__":
     parser.add_argument('product', type=str, help='specify the product to search for')
     parser.add_argument('-v', '--verbose', action='store_true', help='specify if verbose')
     parser.add_argument('-p', '--pages', type=int, default=1, help='specify how many pages to scrape')
+    parser.add_argument('-a', '--only_available', action='store_true', help='shows only items in stock')
     parser.add_argument('-s', '--output', default=True, help='specify if you desire output to console')
     parser.add_argument('-f', '--filename', default='searches.txt', help='specify the file to append results to')
     args = parser.parse_args()
