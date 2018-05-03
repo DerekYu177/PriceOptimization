@@ -17,7 +17,9 @@ class Reporter(object):
 
     def __init__(self, args):
         self.args = args
-        self.products = Searcher(args.product, verbose=args.verbose).search(args.pages)
+        searcher = Searcher(args.product, verbose=args.verbose)
+        self.products = searcher.search(args.pages)
+        self.product_info = searcher.product_info()
 
         if args.only_available:
             self.filter_stock()
@@ -40,7 +42,11 @@ class Reporter(object):
         screen_width, widths = self._fit_screen()
 
         tp.banner(
-            'Looking up: {}'.format(self.args.product),
+            'Looking up: {}, {} pages of {}'.format(
+                self.args.product,
+                self.args.pages,
+                self.product_info["total_number_pages"]
+            ),
             width=screen_width
         )
 

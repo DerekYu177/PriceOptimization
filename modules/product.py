@@ -25,7 +25,7 @@ class Searcher(object):
 
         return full_url
 
-    def _max_page_number(self, document):
+    def _page_info(self, document):
         pagination = document.xpath("//span[contains(@class, 'list-tool-pagination-text')]")
 
         # there will be an even number of elements
@@ -38,11 +38,11 @@ class Searcher(object):
 
         half = pagination[:int(len(pagination)/2)]
 
-        current_elements, all_elements = [e.text for e in half[0].xpath('strong')]
+        self.current_elements, self.all_elements = [e.text for e in half[0].xpath('strong')]
         pages = [e.text for e in half[1].xpath('strong')][0]
 
-        current_page, total_pages = pages.split('/')
-        return int(total_pages)
+        self.current_page, self.total_pages = pages.split('/')
+        return int(self.total_pages)
 
     def _page(self, page_number):
         url = self._url(page_number)
@@ -57,13 +57,15 @@ class Searcher(object):
         first_page_products = primary_page.xpath("//div[contains(@class, 'item-container')]")
         product_list.extend(first_page_products)
 
+        max_number_of_pages = self._page_info(primary_page)
+
         # early return
         if number_of_pages == 1:
             return product_list
 
         # scrape all pages
         if number_of_pages == 0:
-            number_of_pages = self._max_page_number(primary_page)
+            number_of_pages = max_number_of_pages
 
         # scrape remaining pages
         for page_number in range(2, 1+number_of_pages):
@@ -80,6 +82,15 @@ class Searcher(object):
 
         # sort by cheapest first TODO: make this togglable
         return self.df.sort_values(by=['price'], ascending=True)
+
+    def product_info(self):
+        info = {
+            'current_page':self.current_page,
+            'total_number_pages':self.total_pages,
+            'current_element_number':self.current_elements,
+            'total_element_number':self.all_elements,
+        }
+        return info
 
 class Product(object):
 
