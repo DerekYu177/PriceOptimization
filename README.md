@@ -16,8 +16,9 @@ We call this via the command line interface with the following parameters:
 
 `-s` Output result to the screen (prettyTable). By default this will be `True`.
 
+###### Not implemented yet
 `-f` Name of file to append output to. If the file has not been created, a warning will be made and the corresponding `.txt` file will be created.
 By default this will create `searches.txt` in the current directory.
 
 ###### Example usage
-> python3 price_finder "vega 64" -p 0 -s -f vega_result_searches.txt
+> python3 main.py "vega 64" -p 0 -s -f vega_result_searches.txt
