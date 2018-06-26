@@ -29,7 +29,18 @@ class Reporter(object):
         pass
 
     def write_to_screen(self):
-        dtp(self.products).write_to_screen()
+        """
+        Uses DynamicTablePrint to properly format the table for command line
+        viewing
+        """
+        printer = dtp(self.products, squish_column='item', angel_column='price')
+        printer.config.banner = \
+            'Looking up {}: {} pages of {}'.format(
+                self.args.product,
+                self.args.pages,
+                self.product_info['total_number_pages']
+            )
+        printer.write_to_screen()
 
     def report(self):
         if self.args.only_available:
