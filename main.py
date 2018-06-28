@@ -1,9 +1,6 @@
 import sys
 import argparse
 
-# fukin hack
-sys.path.append('../dynamictableprint')
-
 from modules.pricer import Reporter
 
 '''
