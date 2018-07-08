@@ -14,10 +14,16 @@ def _pages(pages):
         return "Will scrape all pages"
     elif pages == 1:
         return "Will scrape 1 page"
-    else:
-        return "Will scrape {} pages".format(pages)
+
+    return "Will scrape {} pages".format(pages)
 
 def report_configuration(args):
+    """
+    Helpful for debugging
+    """
+    if not args.verbose:
+        return
+
     product = "Searching for " + args.product
     verbose = "Verbosity level = " + str(args.verbose)
 
@@ -48,15 +54,20 @@ if __name__ == "__main__":
         '-a', '--only_available', action='store_true',
         help='shows only items in stock')
     parser.add_argument(
-        '-s', '--output', default=True,
+        '-c', '--sort_cheapest', action='store_true',
+        help='sorts items by price, lowest to most expensive')
+    parser.add_argument(
+        '-s', '--toconsole', default=True,
         help='specify if you desire output to console')
+    parser.add_argument(
+        '-w', '--tofile', action='store_true',
+        help='specify if you desire to output to file. ' \
+             'this can be done in tandem with --toconsole')
     parser.add_argument(
         '-f', '--filename', default='searches.txt',
         help='specify the file to append results to')
-    args = parser.parse_args()
+    ARGS = parser.parse_args()
 
-    if args.verbose:
-        report_configuration(args)
-
-    Reporter(args).report()
+    report_configuration(ARGS)
+    Reporter(ARGS).report()
 
